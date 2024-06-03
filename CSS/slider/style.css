@@ -1,0 +1,80 @@
+#sliders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+     background: moccasin;
+   
+}
+#slider{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+   
+}
+#mais{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    position: relative;
+    margin: 50px 0;
+}
+#mais::before{
+    content: '';
+    width: 10px;
+    height: 70%;
+    background: linear-gradient(to top, maroon,rgb(207, 7, 7));
+    left: -15px;
+    bottom: 4px;
+    position: absolute;
+    
+}
+input[type=radio]{
+    display: none;
+}
+.slider-box{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transition: transform .3s ease;
+    border-radius: 10%;
+    margin-bottom: 50px;
+}
+.slider-box img{
+  width: fit-content;
+  border-radius: 10%;
+}
+
+#item-1:checked ~ #slider #song-3,
+#item-2:checked ~ #slider #song-1,
+#item-3:checked ~ #slider #song-2{
+    transform: translateX(-50%) scale(0.8);
+    opacity: .5;
+    z-index: 0;
+}
+#item-1:checked ~ #slider #song-2,
+#item-2:checked ~ #slider #song-3,
+#item-3:checked ~ #slider #song-1{
+    transform: translateX(50%) scale(0.8);
+    opacity: .5;
+    z-index: 0;
+}
+#item-1:checked ~ #slider #song-1,
+#item-2:checked ~ #slider #song-2,
+#item-3:checked ~ #slider #song-3{
+    transform: translateX(0) scale(1);
+    opacity:1;
+    z-index: 1;
+}
+#item-1:checked ~ #slider #song-1 img,
+#item-2:checked ~ #slider #song-2 img,
+#item-3:checked ~ #slider #song-3 img{
+   
+    box-shadow: 0px 4px 8px 0px red;
+}

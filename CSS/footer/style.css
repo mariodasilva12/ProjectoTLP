@@ -1,0 +1,78 @@
+#footer{
+    background: #130d0d;
+    padding: 80px;
+    width: 100%;
+}
+#tudo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 10px;
+}
+#redes_sociais{
+   text-align: center;
+}
+#redes_sociais i{
+    box-shadow: 0  4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background: white;
+    color: black;
+    padding: 10px;
+    transition: background .3s;
+}
+#redes_sociais i:hover{
+    box-shadow: 0  4px 8px 4px rgba(0, 0, 0, 0.22), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    background: #1d1d1d;
+}
+
+#footer a,#footer h1{
+    text-decoration: none;
+    color: white;
+}
+#config{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+#config a{
+  
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+#linha{
+   width: 100%; 
+   border-top: 1px solid white;
+   margin-top: 15px;
+   animation: piscar 1s linear infinite alternate;
+   
+}
+
+@keyframes piscar{
+    0%{
+        border-top:1px solid white;
+    }
+    100%{
+        border-top:1px solid red;
+    }
+}
+
+#config a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: blue; 
+}
+#footer #tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background: white;
+    color: #1d1d1d;
+    padding: 7px;    
+}
+ #footer #tel i{
+    color: #1d1d1d;
+ }

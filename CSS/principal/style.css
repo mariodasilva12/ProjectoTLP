@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Workbench", sans-serif;
+    font-family: "Roboto", sans-serif;
+
+}
+body{
+    width: 100%;
+    background: #fff;
+}
+.default{
+    display: flex;
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    transition: background 0.3s ease;
+    font-size: 17px;
+}
+.default:hover{
+    background: rgb(160, 2, 2);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

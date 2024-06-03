@@ -1,0 +1,88 @@
+#cards{
+    width: 100%;
+    min-height: calc(100vh - 93px);
+    background: rgba(215, 168, 177, 0.078);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    height: 100%;
+    gap: 25px;
+    margin: 0 auto;  
+    
+}
+.box{
+    width: 500px;   
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+     box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0, 0,0,0.19);
+     padding: 30px;
+     border-radius: 20px;
+     transition: transform .1s ease ;
+     background:rgba(245, 222, 179, 0.584);
+     
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+.box_img{
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    padding: 5px;
+    border-radius:10%;
+   background: rgba(255, 0, 0, 0.341);
+   
+}
+
+.box h1{
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.box h1::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right top ,rgb(255, 0, 251), rgb(237, 1, 84));
+    left: -8px;
+    bottom: 0px;
+    padding: 12px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 5px;
+}
+input[type=radio]{
+    display: none;
+}
+.card_label{
+    width: 100%; 
+}
+.box img{
+    width: 100%;
+    border-radius:10%;
+    height: 100%;
+}
+
+.card p{
+    margin: 10px 0;
+    font-family: 'poppins',sans-serif;
+
+    color: green;
+}
+.card p span{
+    color: red;
+    border-radius: 50%;
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+

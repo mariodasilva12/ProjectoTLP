@@ -1,0 +1,117 @@
+
+*{
+    padding: 0;margin: 0; box-sizing: border-box;
+}
+
+
+body{
+    background:linear-gradient(to bottom,rgb(157, 114, 40),rgb(119, 90, 39)) ;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
+
+
+section{
+    width: 100%;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 39px;
+    height: 3px;
+    bottom: 3px;
+    background:linear-gradient(to right, rgb(234, 190, 114), rgb(174, 112, 4));
+    border-radius: 5px;
+}
+
+.form{
+    width: 350px;
+}
+
+label{
+    display: none;
+}
+input{
+    outline: none;
+    margin: 0.75rem 0 0.625rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #cfcccc;
+}
+input:focus{
+    border-bottom: 2px solid rgb(197, 128, 10);
+}
+
+/* PLACEHOLDER */
+ input::placeholder{
+    font-size: 0.75rem;
+ }
+ input:focus::placeholder{
+    transform: translate(-5px, -7px);
+    transition:  transform 0.5s ease;
+ }
+
+ .form-group{
+    display: flex;
+    flex-direction: column;
+ }
+.botoes button{
+   background: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+   margin-top: 20px;
+   border-bottom:4px solid black ;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+ #btnLogin{
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+    background: rgb(221, 144, 12);
+    border: 0;
+    outline: none;
+    margin-top: 0.625rem;
+    box-shadow:  0 0 1px #888;
+    border-radius: 5px;
+
+ }
+ #btnLogin:hover{
+    cursor: pointer;
+    background: moccasin;
+    transition: background 0.5s ease;
+    color: rgba(0, 0, 0, 0.87);
+   
+ }
+ #apg{
+    background: red;
+ }
+ #edt{
+    background: orangered;
+ }

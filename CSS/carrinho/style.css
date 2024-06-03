@@ -1,0 +1,26 @@
+.query{
+    display: flex;
+    background: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.Alterar{
+    background: #008000;
+    padding: 5px;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+.Excluir{
+    background: red;
+    padding: 5px;
+    color: white;
+    border: none;
+}
+
+.Alterar:hover{
+    background: #142a17;
+}
+.Excluir:hover{
+    background: rgb(42, 4, 4);
+}

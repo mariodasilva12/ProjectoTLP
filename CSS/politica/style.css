@@ -1,0 +1,35 @@
+section{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100vh;
+    position: relative;
+}
+section p {
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    word-spacing: 1.2px;
+    letter-spacing: 1.2px;
+}
+
+#concordo{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    transition: 0.2s ease;
+}
+#concordo:hover{
+    background: rgb(9, 9, 101);
+}

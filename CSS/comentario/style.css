@@ -1,0 +1,74 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+ul li{
+    color: black;
+    font-size: 20px;
+    background: rgb(212, 215, 213);
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    width: 60%;
+    margin: 5px auto 0 auto;
+    list-style: none;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container button,input{
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.container button{
+    background: rgb(6, 104, 6);
+    color: wheat;
+    border: none;
+   
+    
+}
+
+.container .editar{
+    background: rgba(255, 166, 0, 0.398);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: black;
+    
+}
+ .editar{
+    background: rgba(255, 166, 0, 0.398);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: black;
+    
+}
+
+.apagar{
+    background: rgba(255, 0, 0, 0.442);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 8px 15px;
+    margin-left: 5px;
+    
+}
+.apagar:hover{
+    background: rgba(59, 2, 2, 0.442);
+}
+.editar:hover{
+    background: rgba(91, 60, 2, 0.398);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt=pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carinho</title>
+
+    <link rel="stylesheet" href="../../CSS/principal/style.css">
+    <link rel="stylesheet" href="../../CSS/cards/style.css">
+    <link rel="stylesheet" href="../../CSS/carrinho/style.css">
+</head>
+<body>
+    
+    <div class="card">
+
+        
+
+        <div class="box">
+        {{#each produtos}}
+            <div class="box_img">
+
+                <label class="card_label" for="red4">
+                    <img src="../../ASSETS/IMG/car3.jpg" alt=""> 
+                </label>
+
+            </div>
+
+            <div class="inputs">
+                <input type="radio" name="botao4" id="red4" checked >
+                <input type="radio" name="botao4" id="black4">
+            </div>
+
+            <h1>Audi</h1>
+            <p><span>preco</span>: 5000 R$</p>
+
+            <div class="query">
+                <span><button class="Alterar">Alterar</button></span>
+                <span><button class="Excluir">Excluir</button></span>
+            </div>
+            
+
+        </div>
+       
+
+    </div>
+</body>
+</html>

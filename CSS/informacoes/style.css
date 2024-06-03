@@ -1,0 +1,37 @@
+body{
+    background: #1d1d1d;
+}
+#infor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner{
+    height: 100%;
+    width: 800px;
+    padding: 1rem;
+    animation: inf 2s ease-in-out infinite alternate;
+    transition: transform 5s linear;
+}
+@keyframes inf{
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+#banner img{
+    width: 100%;
+}
+.infor_box{
+    width: 60%;
+    background: linear-gradient(to right,moccasin ,rgb(95, 70, 27) );
+    padding: 30px;
+    border-radius: 90px 10px 90px 10px;
+}
+.infor_box h2, .infor_box p{    font-family: 'Courier New', Courier, monospace;
+} 
